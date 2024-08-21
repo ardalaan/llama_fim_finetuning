@@ -20,7 +20,7 @@ CUDA_VISIBLE_DEVICES=0 WANDB_PROJECT=personal-code-copilot python train.py \
 --weight_decay 0.1 \
 --warmup_ratio 0.1 \
 --max_grad_norm 1.0 \
---output_dir "fim_llama-hugcoder" \
+--output_dir "fim_llama" \
 --per_device_train_batch_size 16 \
 --per_device_eval_batch_size 16 \
 --gradient_accumulation_steps 4 \
