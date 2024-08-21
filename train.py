@@ -251,7 +251,7 @@ class ConstantLengthDataset(IterableDataset):
 
 
 def create_datasets(tokenizer, args, seed):
-    dataset = load_dataset(args.dataset_name, split=args.splits, streaming=True)
+    dataset = load_dataset(args.dataset_name, split=args.splits)
     dataset = dataset.train_test_split(
         test_size=args.test_size, seed=seed, shuffle=True
     )
