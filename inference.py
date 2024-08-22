@@ -14,7 +14,7 @@ base_model = AutoModelForCausalLM.from_pretrained(
     torch_dtype=torch.bfloat16,
 ).cuda()
 
-merge fine-tuned weights with the base model
+# merge fine-tuned weights with the base model
 peft_model_id = f"ardalaaan/{OUTPUT_DIR}"
 model = PeftModel.from_pretrained(base_model, peft_model_id)
 model.merge_and_unload()
