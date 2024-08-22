@@ -1,4 +1,9 @@
 !pip install peft torch transformers datasets huggingface_hub
+
+from huggingface_hub import notebook_login
+notebook_login()
+
+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
 ###########################################################################
 from transformers import (
     AutoModelForCausalLM,
